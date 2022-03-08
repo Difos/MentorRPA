@@ -1,0 +1,24 @@
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\bin\Debug\MentorBot.exe.config
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\bin\Debug\MentorBot.exe
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\bin\Debug\MentorBot.pdb
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\bin\Debug\MentorBot.xml
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.vbprojAssemblyReference.cache
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.Form1.resources
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.Resources.resources
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.vbproj.GenerateResource.cache
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.vbproj.CoreCompileInputs.cache
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.exe
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.xml
+C:\Dados\Projetos\MentorBot\MentorBot\MentorBot\obj\Debug\MentorBot.pdb
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Debug\MentorBot.exe.config
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Debug\MentorBot.exe
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Debug\MentorBot.pdb
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Debug\MentorBot.xml
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.Form1.resources
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.Resources.resources
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.vbproj.GenerateResource.cache
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.vbproj.CoreCompileInputs.cache
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.exe
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.xml
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.pdb
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Debug\MentorBot.vbprojAssemblyReference.cache

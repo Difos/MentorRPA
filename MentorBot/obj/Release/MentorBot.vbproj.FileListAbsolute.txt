@@ -1,0 +1,11 @@
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Release\MentorBot.exe.config
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Release\MentorBot.exe
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Release\MentorBot.pdb
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\bin\Release\MentorBot.xml
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Release\MentorBot.Form1.resources
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Release\MentorBot.Resources.resources
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Release\MentorBot.vbproj.GenerateResource.cache
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Release\MentorBot.vbproj.CoreCompileInputs.cache
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Release\MentorBot.exe
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Release\MentorBot.xml
+C:\Dados\Projetos\MentorBot - Copia\MentorBot\MentorBot\obj\Release\MentorBot.pdb
