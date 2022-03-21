@@ -32,21 +32,13 @@ Public Class Form1
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-        Dim mentoup As Boolean = False
-        Dim dt As TimeSpan
 
-        Dim timme As Date
 
-        For Each x In Process.GetProcessesByName("MentorPC")
-            If (x.ToString() <> "") Then
-                mentoup = True
-            Else
-                mentoup = False
 
-            End If
-        Next
 
-        If (mentoup) Then
+
+        If (verifyMentorUp()) Then
+
 
 
         Else
@@ -75,19 +67,12 @@ Public Class Form1
             Call apimouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 1)
 
 
-            dt = TimeSpan.Parse("00:00:06")
-            timme = Now + dt
+            WaitForTime("00:00:06")
 
-            Do While Now < timme
-
-
-            Loop
 
             Timer1.Enabled = False
             Timer2.Enabled = False
 
-
-            '  MessageBox.Show("Parou")
 
         End If
 
@@ -257,7 +242,7 @@ Public Class Form1
 
         Dim dir As New DirectoryInfo(TextBox1.Text)
         Dim fileList As List(Of FileInfo) = dir.GetFiles().ToList()
-        Dim Aux As New AuxCodeHandler
+        Dim Aux As New AuxCode
 
 
         fileList.Sort(AddressOf Aux.SortByDate)
@@ -403,7 +388,14 @@ Public Class Form1
 
     End Sub
 
+    Public Sub getMDPToText()
 
+        For Each file In Directory.EnumerateFiles(TextBox2.Text, "*.mdp")
+            If (file.Length <= 87) Then
+
+            End If
+        Next
+    End Sub
 
     Public Sub renamecsv(wagon As String, tipo As String, mdp As String)
 
@@ -416,18 +408,18 @@ Public Class Form1
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim Aux As New AuxCodeHandler
+        Dim Aux As New AuxCode
         Aux.MoveWrongFile(mt2, TextBox1.Text)
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim Aux As New AuxCodeHandler
+        Dim Aux As New AuxCode
         Aux.RenameWrongFile(mt2, TextBox1.Text)
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Dim Aux As New AuxCodeHandler
-        Aux.WriteMDPInTxt(mt2, TextBox1.Text)
+        Dim Aux As New AuxCode
+        Aux.WriteMDPInTxt()
     End Sub
 
     Public Sub WaitForTime(time As String)
@@ -446,4 +438,19 @@ Public Class Form1
 
 
     End Sub
+
+    Public Function verifyMentorUp()
+        Dim mentorup As Boolean = True
+        For Each x In Process.GetProcessesByName("MentorPC")
+            If (x.ToString() <> "") Then
+                mentorup = True
+            Else
+                mentorup = False
+
+            End If
+        Next
+
+        verifyMentorUp = mentorup
+
+    End Function
 End Class

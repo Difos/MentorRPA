@@ -1,35 +1,46 @@
 ﻿Imports System.IO
 
-Public Class AuxCodeHandler
+Public Class AuxCode
 
     'conjunto de metodos para tratar nome de arquivos , mover arquivos, separar arquivos duplicados 
-    Sub WriteMDPInTxt(mt2 As String(,), path As String)
+    Sub WriteMDPInTxt()
 
         'metodo que pega a listgem de arquivos em um txt e copia para uma determinada pasta
         'util para obter arquivos restantes para processar
 
         Dim file As System.IO.StreamWriter
-        Dim arc(6000, 1)
+
+        Dim arc(26000, 1)
         Dim u As Integer = 0
         Dim j As Integer = 0
 
-        Dim reader As New System.IO.StreamReader("c:\Script\mdps2.txt")
+        ' Dim reader As New System.IO.StreamReader("c:\Script\mdps3.txt")
         Dim allLines As List(Of String) = New List(Of String)
+        Dim dir As New DirectoryInfo(Form1.TextBox1.Text)
 
-        Do While reader.Peek() <> -1
+        Dim fileList As List(Of FileInfo) = dir.GetFiles().ToList()
 
-            arc(u, 0) = reader.ReadLine() & vbNewLine
+        For Each F As FileInfo In fileList
+            arc(u, 0) = F.Name.ToString()
             u += 1
 
-        Loop
+        Next
 
 
-        reader.Close()
+        'Do While reader.Peek() <> -1
+
+        '    arc(u, 0) = reader.ReadLine() & vbNewLine
+        '    u += 1
+
+        'Loop
+
+
+        'reader.Close()
 
         While j < u
 
 
-            My.Computer.FileSystem.CopyFile(arc(j, 0).Replace(";", ""), "E:\Transformar MDP\" + arc(j, 0).Replace("D:\INP. ULTRASSOM\", "").Replace(";", ""))
+            '  My.Computer.FileSystem.CopyFile(arc(j, 0).Replace(";", ""), "E:\Transformar MDP\" + arc(j, 0).Replace("D:\INP. ULTRASSOM\", "").Replace(";", ""))
             j += 1
 
         End While
@@ -38,28 +49,19 @@ Public Class AuxCodeHandler
         file = My.Computer.FileSystem.OpenTextFileWriter("c:\Script\mdps.txt", True)
 
         Dim i As Integer = 0
-        Dim dir As New DirectoryInfo(path)
-        Dim fileList As List(Of FileInfo) = dir.GetFiles().ToList()
+        '  Dim dir As New DirectoryInfo(path)
+        '  Dim fileList As List(Of FileInfo) = dir.GetFiles().ToList()
         Dim hora As Integer
         Dim duplicadoManha As Integer = 0
         Dim duplicadoTarde As Integer = 0
 
         fileList.Sort(AddressOf SortByDate)
 
-
-        For Each F As FileInfo In fileList
-
-
-            mt2(i, 0) = F.FullName.ToString()
-            mt2(i, 1) = F.Length.ToString()
-            mt2(i, 2) = F.Name()
-
-            file.WriteLine(F.Name())
+        While i < j
+            file.WriteLine(arc(i, 0))
             i += 1
+        End While
 
-
-
-        Next
     End Sub
     Sub VerificaDuplicidade(mt2 As String(,), path As String)
 
